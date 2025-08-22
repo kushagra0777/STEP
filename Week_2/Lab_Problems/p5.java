@@ -68,9 +68,9 @@ public class p5 {
     }
 
     public static void displayTable(List<EmailInfo> infos) {
-        System.out.println("\n| Email                | Username   | Domain         | Domain Name | Extension | Valid |");
+        System.out.println("\n Email Username     ,Domain         ,Domain Name    ,Extension      ,    Valid      ,");
         for (EmailInfo info : infos) {
-            System.out.printf("| %-20s | %-10s | %-13s | %-10s | %-8s | %-5s |\n",
+            System.out.printf(", %-20s , %-10s , %-13s , %-10s , %-8s , %-5s ,\n",
                 info.email, info.username, info.domain, info.domainName, info.extension, info.valid ? "Yes" : "No");
         }
     }
