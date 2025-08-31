@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class p3 {
-
     public static Object[] countCharFrequency(String text) {
         char[] chars = new char[text.length()];
         int[] freq = new int[text.length()];
@@ -29,7 +27,6 @@ public class p3 {
         System.arraycopy(freq, 0, resultFreq, 0, unique);
         return new Object[]{resultChars, resultFreq};
     }
-
     public static String[][] createCompressionCodes(char[] chars, int[] freq) {
         int n = chars.length;
         int[] idx = new int[n];

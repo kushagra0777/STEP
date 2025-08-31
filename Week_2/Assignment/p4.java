@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class p4 {
-
     public static boolean isValidExpression(String expr) {
         int paren = 0;
         char prev = ' ';
@@ -19,9 +17,7 @@ public class p4 {
         }
         return paren == 0;
     }
-
     public static List<String> getSteps = new ArrayList<>();
-
     public static int evaluate(String expr) {
         getSteps.clear();
         getSteps.add(expr);
@@ -37,7 +33,6 @@ public class p4 {
         getSteps.add(expr + " = " + result);
         return result;
     }
-
     public static int evaluateSimple(String expr) {
         List<Integer> nums = new ArrayList<>();
         List<Character> ops = new ArrayList<>();

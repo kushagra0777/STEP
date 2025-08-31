@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class p6 {
     static class FileInfo {
         String originalName;
@@ -18,7 +17,6 @@ public class p6 {
             this.valid = valid;
         }
     }
-
     static Map<String, String> extCategory = new HashMap<>();
     static {
         extCategory.put("txt", "Document");

@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class p5 {
-
     public static String[][] parseCSV(String input) {
         List<List<String>> rows = new ArrayList<>();
         int i = 0, n = input.length();

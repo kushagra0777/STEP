@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class p2 {
-
     public static int[] analyzePassword(String pwd) {
         int upper = 0, lower = 0, digit = 0, special = 0;
         for (int i = 0; i < pwd.length(); i++) {
@@ -13,7 +11,6 @@ public class p2 {
         }
         return new int[]{upper, lower, digit, special};
     }
-
     public static int calcScore(String pwd, int[] counts) {
         int score = 0;
         int len = pwd.length();
@@ -26,13 +23,11 @@ public class p2 {
         for (String p : patterns) if (lowerPwd.contains(p)) score -= 10;
         return score;
     }
-
     public static String getStrength(int score) {
         if (score <= 20) return "Weak";
         if (score <= 50) return "Medium";
         return "Strong";
     }
-
     public static String generatePassword(int length) {
         String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String lower = "abcdefghijklmnopqrstuvwxyz";

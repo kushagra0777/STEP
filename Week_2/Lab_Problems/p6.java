@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class p6 {
-
     public static String[] splitWords(String text) {
         int n = text.length();
         String[] temp = new String[n]; 
@@ -19,7 +17,6 @@ public class p6 {
         System.arraycopy(temp, 0, words, 0, count);
         return words;
     }
-
     public static String[] justifyText(String[] words, int width) {
         StringBuilder sb = new StringBuilder();
         int i = 0;

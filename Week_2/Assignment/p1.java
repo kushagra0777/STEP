@@ -1,7 +1,5 @@
 import java.util.*;
-
 public class p1 {
-
     public static String[] splitWords(String text) {
         int n = text.length();
         String[] temp = new String[n];
@@ -19,7 +17,6 @@ public class p1 {
         System.arraycopy(temp, 0, words, 0, count);
         return words;
     }
-
     public static int stringDistance(String w1, String w2) {
         int len1 = w1.length(), len2 = w2.length();
         int minLen = Math.min(len1, len2);
@@ -29,7 +26,6 @@ public class p1 {
         }
         return diff;
     }
-
     public static String findSuggestion(String word, String[] dict) {
         int minDist = Integer.MAX_VALUE;
         String suggestion = word;
@@ -52,8 +48,7 @@ public class p1 {
             System.out.printf("%-12s , %-12s , %-7d , %-10s\n", w, suggestion, dist, status);
         }
     }
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a sentence:");
         String sentence = sc.nextLine();
@@ -61,7 +56,6 @@ public class p1 {
         String dictInput = sc.nextLine();
         String[] dict = splitWords(dictInput.replace(",", " "));
         String[] words = splitWords(sentence);
-
         System.out.println("\nSpell Check Report:");
         displayResults(words, dict);
     }

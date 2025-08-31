@@ -12,7 +12,6 @@ public class p5 {
             this.valid = valid;
         }
     }
-
     public static boolean isValidEmail(String email) {
         int at = email.indexOf('@');
         int lastAt = email.lastIndexOf('@');
@@ -24,7 +23,6 @@ public class p5 {
         if (username.isEmpty() || domain.isEmpty()) return false;
         return true;
     }
-
     public static EmailInfo extractInfo(String email) {
         boolean valid = isValidEmail(email);
         String username = "", domain = "", domainName = "", extension = "";
